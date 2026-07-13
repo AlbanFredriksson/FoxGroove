@@ -276,9 +276,16 @@ a { text-decoration: none; }
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.8rem 2rem;
-  position: relative; overflow: hidden;
+  overflow: hidden;
+  position: relative;
   transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out);
+}
+.band-card-img {
+  width: 100%; height: 200px;
+  object-fit: cover; display: block;
+}
+.band-card-body {
+  padding: 1.8rem 2rem;
 }
 @media (hover: hover) and (pointer: fine) {
   .band-card:hover {
@@ -632,27 +639,38 @@ footer {
     <div class="band-grid">
       <div class="band-card reveal reveal-d1">
         <div class="band-accent"></div>
-        <div class="band-date">27 mars 2026</div>
-        <div class="band-name">Blender</div>
-        <div class="band-venue">Folkets Hus, Uddevalla</div>
+        <div class="band-card-body">
+          <div class="band-date">27 mars 2026</div>
+          <div class="band-name">Blender</div>
+          <div class="band-venue">Folkets Hus, Uddevalla</div>
+        </div>
       </div>
       <div class="band-card reveal reveal-d2">
         <div class="band-accent"></div>
-        <div class="band-date">16 oktober 2026</div>
-        <div class="band-name">Highlights</div>
-        <div class="band-venue">Folkets Hus, Uddevalla</div>
+        <img src="highlights.jpg" alt="Highlights" class="band-card-img">
+        <div class="band-card-body">
+          <div class="band-date">16 oktober 2026</div>
+          <div class="band-name">Highlights</div>
+          <div class="band-venue">Folkets Hus, Uddevalla</div>
+        </div>
       </div>
       <div class="band-card reveal reveal-d3">
         <div class="band-accent"></div>
-        <div class="band-date">20 november 2026</div>
-        <div class="band-name">Callinaz</div>
-        <div class="band-venue">Folkets Hus, Uddevalla</div>
+        <img src="callinaz.jpg" alt="Callinaz" class="band-card-img">
+        <div class="band-card-body">
+          <div class="band-date">20 november 2026</div>
+          <div class="band-name">Callinaz</div>
+          <div class="band-venue">Folkets Hus, Uddevalla</div>
+        </div>
       </div>
       <div class="band-card reveal reveal-d4">
         <div class="band-accent"></div>
-        <div class="band-date">27 november 2026</div>
-        <div class="band-name">PH:s</div>
-        <div class="band-venue">Folkets Hus, Uddevalla</div>
+        <img src="phs.jpg" alt="PH:s" class="band-card-img">
+        <div class="band-card-body">
+          <div class="band-date">27 november 2026</div>
+          <div class="band-name">PH:s</div>
+          <div class="band-venue">Folkets Hus, Uddevalla</div>
+        </div>
       </div>
     </div>
   </div>
